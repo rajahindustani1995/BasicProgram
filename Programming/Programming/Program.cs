@@ -8,6 +8,7 @@ Console.WriteLine("4 for Harmonic Number");
 Console.WriteLine("5 for Factors");
 Console.WriteLine("6 for Compute Quotient and Remainder");
 Console.WriteLine("7 for Swap Two Numbers");
+Console.WriteLine("8 for Check Whether a Number is Even or Odd");
 
 int Problem = Convert.ToInt32(Console.ReadLine());
 
@@ -41,6 +42,10 @@ switch (Problem)
     case 7:
         SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();   
         swapTwoNumbers.SwapNumb();
+        break;
+    case 8:
+        EvenOrOdd evenOrOdd = new EvenOrOdd();
+        evenOrOdd.Check();
         break;
     default:
         Console.WriteLine("Invalid Option");
