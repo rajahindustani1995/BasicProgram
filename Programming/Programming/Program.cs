@@ -6,6 +6,7 @@ Console.WriteLine("2 for Leep Year");
 Console.WriteLine("3 for Power of 2");
 Console.WriteLine("4 for Harmonic Number");
 Console.WriteLine("5 for Factors");
+Console.WriteLine("6 for Compute Quotient and Remainder");
 
 int Problem = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +32,10 @@ switch (Problem)
     case 5:
         Factors factors = new Factors(); 
         factors.PrimeFactors();
+        break;
+    case 6:
+        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+        quotientAndRemainder.QuotientRemainder();
         break;
     default:
         Console.WriteLine("Invalid Option");
