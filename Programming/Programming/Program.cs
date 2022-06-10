@@ -4,7 +4,8 @@ Console.WriteLine("Enter a Number for Relative Problem.\n");
 Console.WriteLine("1 for Flip Coin and Print Percentage of Heads and Tails");
 Console.WriteLine("2 for Leep Year");
 Console.WriteLine("3 for Power of 2");
-
+Console.WriteLine("4 for Harmonic Number");
+Console.WriteLine("5 for Factors");
 
 int Problem = Convert.ToInt32(Console.ReadLine());
 
@@ -26,6 +27,10 @@ switch (Problem)
     case 4:
         HarmonicNumber harmonicNumber = new HarmonicNumber();
         harmonicNumber.Harmonic_Number();   
+        break;
+    case 5:
+        Factors factors = new Factors(); 
+        factors.PrimeFactors();
         break;
     default:
         Console.WriteLine("Invalid Option");
