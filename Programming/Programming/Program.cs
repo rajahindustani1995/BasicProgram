@@ -1,5 +1,4 @@
-﻿
-using Programming;
+﻿using Programming;
 
 Console.WriteLine("Enter a Number for Relative Problem.\n");
 Console.WriteLine("1 for Flip Coin and Print Percentage of Heads and Tails");
@@ -23,6 +22,10 @@ switch (Problem)
     case 3:
         PowerOfTwo powerOfTwo = new PowerOfTwo();
         powerOfTwo.Power();
+        break;
+    case 4:
+        HarmonicNumber harmonicNumber = new HarmonicNumber();
+        harmonicNumber.Harmonic_Number();   
         break;
     default:
         Console.WriteLine("Invalid Option");
