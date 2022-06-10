@@ -10,6 +10,7 @@ Console.WriteLine("6 for Compute Quotient and Remainder");
 Console.WriteLine("7 for Swap Two Numbers");
 Console.WriteLine("8 for Check Whether a Number is Even or Odd");
 Console.WriteLine("9 for Check Whether an Alphabet is Vowel or Consonant");
+Console.WriteLine("10 for Find the Largest Among Three Numbers");
 
 int Problem = Convert.ToInt32(Console.ReadLine());
 
@@ -51,6 +52,10 @@ switch (Problem)
     case 9:
         VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
         vowelOrConsonant.Vowel_Consonant();
+        break;
+    case 10:
+        LargestAmongThreeNumb largestAmongThreeNumb = new LargestAmongThreeNumb();
+        largestAmongThreeNumb.ThreeNumb();
         break;
     default:
         Console.WriteLine("Invalid Option");
