@@ -9,6 +9,7 @@ Console.WriteLine("5 for Factors");
 Console.WriteLine("6 for Compute Quotient and Remainder");
 Console.WriteLine("7 for Swap Two Numbers");
 Console.WriteLine("8 for Check Whether a Number is Even or Odd");
+Console.WriteLine("9 for Check Whether an Alphabet is Vowel or Consonant");
 
 int Problem = Convert.ToInt32(Console.ReadLine());
 
@@ -46,6 +47,10 @@ switch (Problem)
     case 8:
         EvenOrOdd evenOrOdd = new EvenOrOdd();
         evenOrOdd.Check();
+        break;
+    case 9:
+        VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
+        vowelOrConsonant.Vowel_Consonant();
         break;
     default:
         Console.WriteLine("Invalid Option");
